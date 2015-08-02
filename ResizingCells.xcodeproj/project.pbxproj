@@ -14,6 +14,8 @@
 		84B491D01B6D2A1200B2962A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B491CF1B6D2A1200B2962A /* Images.xcassets */; };
 		84B491D31B6D2A1200B2962A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B491D11B6D2A1200B2962A /* LaunchScreen.xib */; };
 		84B491DF1B6D2A1200B2962A /* ResizingCellsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B491DE1B6D2A1200B2962A /* ResizingCellsTests.m */; };
+		84B491EA1B6D2FFF00B2962A /* DRTextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B491E91B6D2FFF00B2962A /* DRTextModel.m */; };
+		84B491F01B6D376500B2962A /* DRResizingViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B491EF1B6D376500B2962A /* DRResizingViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		84B491D81B6D2A1200B2962A /* ResizingCellsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResizingCellsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B491DD1B6D2A1200B2962A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B491DE1B6D2A1200B2962A /* ResizingCellsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResizingCellsTests.m; sourceTree = "<group>"; };
+		84B491E81B6D2FFF00B2962A /* DRTextModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRTextModel.h; path = Model/DRTextModel.h; sourceTree = "<group>"; };
+		84B491E91B6D2FFF00B2962A /* DRTextModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRTextModel.m; path = Model/DRTextModel.m; sourceTree = "<group>"; };
+		84B491EE1B6D376500B2962A /* DRResizingViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRResizingViewCell.h; path = Cells/DRResizingViewCell.h; sourceTree = "<group>"; };
+		84B491EF1B6D376500B2962A /* DRResizingViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRResizingViewCell.m; path = Cells/DRResizingViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +87,13 @@
 		84B491C11B6D2A1200B2962A /* ResizingCells */ = {
 			isa = PBXGroup;
 			children = (
+				84B491EC1B6D34A700B2962A /* Views */,
+				84B491EB1B6D300500B2962A /* Model */,
 				84B491C61B6D2A1200B2962A /* AppDelegate.h */,
 				84B491C71B6D2A1200B2962A /* AppDelegate.m */,
 				84B491C91B6D2A1200B2962A /* ViewController.h */,
 				84B491CA1B6D2A1200B2962A /* ViewController.m */,
 				84B491CC1B6D2A1200B2962A /* Main.storyboard */,
-				84B491CF1B6D2A1200B2962A /* Images.xcassets */,
-				84B491D11B6D2A1200B2962A /* LaunchScreen.xib */,
 				84B491C21B6D2A1200B2962A /* Supporting Files */,
 			);
 			path = ResizingCells;
@@ -96,6 +102,8 @@
 		84B491C21B6D2A1200B2962A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84B491CF1B6D2A1200B2962A /* Images.xcassets */,
+				84B491D11B6D2A1200B2962A /* LaunchScreen.xib */,
 				84B491C31B6D2A1200B2962A /* Info.plist */,
 				84B491C41B6D2A1200B2962A /* main.m */,
 			);
@@ -117,6 +125,32 @@
 				84B491DD1B6D2A1200B2962A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84B491EB1B6D300500B2962A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84B491E81B6D2FFF00B2962A /* DRTextModel.h */,
+				84B491E91B6D2FFF00B2962A /* DRTextModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84B491EC1B6D34A700B2962A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84B491ED1B6D34B700B2962A /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		84B491ED1B6D34B700B2962A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84B491EE1B6D376500B2962A /* DRResizingViewCell.h */,
+				84B491EF1B6D376500B2962A /* DRResizingViewCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B491EA1B6D2FFF00B2962A /* DRTextModel.m in Sources */,
 				84B491CB1B6D2A1200B2962A /* ViewController.m in Sources */,
 				84B491C81B6D2A1200B2962A /* AppDelegate.m in Sources */,
+				84B491F01B6D376500B2962A /* DRResizingViewCell.m in Sources */,
 				84B491C51B6D2A1200B2962A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
